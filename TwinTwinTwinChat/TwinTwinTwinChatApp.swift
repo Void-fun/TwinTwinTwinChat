@@ -7,7 +7,7 @@ struct TwinTwinTwinChatApp: App {
         let schema = Schema([
             Message.self,
         ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: true)
+        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
         do {
             let container = try ModelContainer(for: schema, configurations: [modelConfiguration])
